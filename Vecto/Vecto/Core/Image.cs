@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vecto.Core
 {
-    internal class Image
+    public class Image
     {
         public string Name { get; set; }
         public string FilePath { get; set; }

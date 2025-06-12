@@ -7,7 +7,7 @@ using Vecto.Core;
 
 namespace Vecto.Services
 {
-    internal class SaturationEffect : IImageEffect
+    public class SaturationEffect : IImageEffect
     {
         public string Name => "Saturation";
         public void ApplyEffect(Image image, string parameter = null)

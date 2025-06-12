@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Vecto.Core
 {
-    internal interface IImageEffect
+    public interface IImageEffect
     {
         string Name { get; }
 

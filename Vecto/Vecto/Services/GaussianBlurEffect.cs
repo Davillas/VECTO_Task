@@ -7,7 +7,7 @@ using Vecto.Core;
 
 namespace Vecto.Services
 {
-    internal class GaussianBlurEffect
+    public class GaussianBlurEffect : IImageEffect
     {
         public string Name => "GaussianBlur";
         public void ApplyEffect(Image image, string parameter = null)
