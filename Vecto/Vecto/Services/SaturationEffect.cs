@@ -10,7 +10,7 @@ namespace Vecto.Services
     public class SaturationEffect : IImageEffect
     {
         public string Name => "Saturation";
-        public void ApplyEffect(Image image, string parameter = null)
+        public void ApplyEffect(Image image, string? parameter = null)
         {
             image.AddEffect($"{Name} is set to {parameter}");
         }

@@ -10,7 +10,7 @@ namespace Vecto.Services
     public class GrayscaleEffect : IImageEffect
     {
         public string Name => "Grayscale";
-        public void ApplyEffect(Image image, string parameter = null)
+        public void ApplyEffect(Image image, string? parameter = null)
         {
             image.AddEffect($"{Name} is set to {parameter}");
         }

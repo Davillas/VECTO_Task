@@ -10,7 +10,7 @@ namespace Vecto.Services
     public class ResizeEffect : IImageEffect
     {
         public string Name => "Resize";
-        public void ApplyEffect(Image image, string parameter = null)
+        public void ApplyEffect(Image image, string? parameter = null)
         {
             image.AddEffect($"Image resized to {parameter}px");
         }
