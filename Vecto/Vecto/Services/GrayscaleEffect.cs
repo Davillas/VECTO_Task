@@ -7,7 +7,7 @@ using Vecto.Core;
 
 namespace Vecto.Services
 {
-    public class GrayscaleEffect
+    public class GrayscaleEffect : IImageEffect
     {
         public string Name => "Grayscale";
         public void ApplyEffect(Image image, string parameter = null)

@@ -7,7 +7,7 @@ using Vecto.Core;
 
 namespace Vecto.Services
 {
-    public class ResizeEffect
+    public class ResizeEffect : IImageEffect
     {
         public string Name => "Resize";
         public void ApplyEffect(Image image, string parameter = null)
