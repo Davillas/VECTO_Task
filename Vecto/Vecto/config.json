@@ -2,6 +2,7 @@
   "plugins": [
     "SaturationEffect",
     "GaussianBlurEffect",
-    "GrayscaleEffect"
+    "GrayscaleEffect",
+    "ResizeEffect"
   ]
 }

@@ -10,6 +10,6 @@ namespace Vecto.Core
     {
         string Name { get; }
 
-        void ApplyEffect(ImageFile imageFile, string parameter = null);
+        void ApplyEffect(Image imageFile, string parameter = null);
     }
 }

@@ -7,12 +7,12 @@ using Vecto.Core;
 
 namespace Vecto.Services
 {
-    internal class GaussianBlurEffect
+    internal class ResizeEffect
     {
-        public string Name => "GaussianBlur";
+        public string Name => "Resize";
         public void ApplyEffect(Image image, string parameter = null)
         {
-            image.AddEffect($"{Name} is set to {parameter}px");
+            image.AddEffect($"Image resized to {parameter}px");
         }
     }
 }

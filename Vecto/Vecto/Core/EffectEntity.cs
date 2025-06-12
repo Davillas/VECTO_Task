@@ -8,5 +8,7 @@ namespace Vecto.Core
 {
     internal class EffectEntity
     {
+        public string EffectName { get; set; }
+        public string Parameter { get; set; }
     }
 }

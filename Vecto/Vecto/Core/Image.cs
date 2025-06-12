@@ -8,5 +8,25 @@ namespace Vecto.Core
 {
     internal class Image
     {
+        public string Name { get; set; }
+        public string FilePath { get; set; }
+        public List<string> AppliedEffects { get; }
+
+        public Image(string name, string filePath)
+        {
+            Name = name;
+            FilePath = filePath;
+            AppliedEffects = new List<string>();
+        }
+
+        public void AddEffect(string effectName)
+        {
+            if (!AppliedEffects.Contains(effectName))
+            {
+                AppliedEffects.Add(effectName);
+            }
+        }
+
+
     }
 }
