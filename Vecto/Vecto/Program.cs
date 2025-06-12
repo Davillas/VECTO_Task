@@ -9,8 +9,8 @@ namespace Vecto
         {
             // ~~~~~~~~~~Simulation of plugin loading and effect application~~~~~~~~~~~~~~
 
-
-            var plugins = PluginController.GetAvailablePlugins();
+            var configPath = Path.GetFullPath(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\config.json"));
+            var plugins = PluginController.GetAvailablePlugins(configPath);
             var imageProcessor = new ImageProcessor(plugins);
 
             var image1 = new Image("Image_1","example1.jpg");
